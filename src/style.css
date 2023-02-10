@@ -1,0 +1,240 @@
+body{
+    background-color: #F3F5FC;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    margin: 2.5em;
+}
+
+body, html{ height: 100%; }
+
+/* Area de contenido */
+#logo {
+    width: 7.5em;
+    height: 3em;
+}
+
+/* Todo lo relacionado al area de output cuando esta vacia */
+.area_output_vacia {
+    background-color: white;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: 2.5em;
+    border-radius: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 28%;
+    padding: 2em;    
+}
+
+.area_output_vacia img{
+    width: 336px;
+    height: 304px;
+    padding-bottom: 2em;
+    margin: 0 auto;
+}
+
+
+.area_output_vacia  p:nth-child(2) {
+    font-size: 32px;
+    font-weight: 300;
+    padding: 1rem;
+}
+
+/* Todo lo relacionado al area de output cuando esta vacia */
+.area_output_llena {
+    width: 28%;
+    background-color: white;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: 2.5em;
+    border-radius: 2em;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2em; 
+    
+}
+
+.area_output_llena p:first-of-type {
+    font-size: 24px;
+    overflow: auto;
+    height: 100%;
+}
+
+.area_output_llena #copiar {
+    padding: 1.5em;
+    background-color: white;
+    border: 1px solid #0A3871;
+    border-radius: 1.2em;
+    color: #0A3871;
+    transition: background 500ms;
+    cursor: pointer;
+    margin-top: 2em;
+}
+
+.area_output_llena #copiar:hover {
+    background-color: #0A3871;
+    color: white;
+}
+
+.area_output_llena #copiar:active {
+    background-color: white;
+    color: #0A3871;
+}
+
+/* Todo lo relacionado con el area de input*/
+.area_input {
+    position: absolute;
+    left: 16.7%;
+    top: 13%;
+    bottom: 5%;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.area_input .area_de_texto {
+    height: 80%;
+    resize: none;
+    overflow: auto;
+    border: none;
+    background-color: #F3F5FC;
+    color: #0A3871;
+    font-size: 2em;
+    font-weight: 400;
+    margin-bottom: 0.3em ;
+}
+
+.area_input .area_de_texto::placeholder {
+    color: #0A3871;
+}
+
+.area_input .infoYbotones {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;
+    align-items: center;
+    margin-left: 3% ;
+}
+
+.info img {
+    padding-right: 0.5em ;
+}
+
+.botones {
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+}
+
+.botones button {
+    padding: 1.5em;
+    background-color: white;
+    border: 1px solid #0A3871;
+    border-radius: 1.2em;
+    color: #0A3871;
+    transition: background 500ms;
+    cursor: pointer;
+    width: 45%;
+    margin: 1em 0;
+}
+
+.botones button:hover {
+    background-color: #0A3871;
+    color: white;
+}
+
+.botones button:active {
+    background-color: white;
+    color: #0A3871;
+}
+
+.botones #boton_encriptar {
+    background-color: #0A3871;
+    color: white;
+}
+
+.botones #boton_encriptar:hover {
+    background-color: white;
+    color: #0A3871;
+}
+.botones #boton_encriptar:active {
+    background-color: #0A3871;
+    color: white;
+}
+
+
+@media screen and (max-width:1040px) {
+    .area_output_vacia img {
+        display: none;
+    }
+}
+
+@media screen and (max-width:930px) {
+  
+    .area_input {
+        display: block;
+        top: auto;
+        right: auto;
+        left: auto;
+        bottom: auto;
+        margin: auto;
+        width: 90%;
+        margin-right:2.5em ;
+        margin-top: 2.5em;
+        position: static;
+        font-size: 1em;
+    }
+
+    .area_de_texto{
+        width: 100%;
+    }
+    
+    .area_input .botones button {
+        font-size: 0.7em;
+    }
+    
+    .area_output_vacia {
+        top: auto;
+        right: auto;
+        left: auto;
+        bottom: auto;
+        margin: auto;
+        position: static;
+        bottom: 2.5em;
+        margin: 2.5em auto;
+        width: 80%;
+
+    }
+
+    .area_output_llena {
+        top: auto;
+        right: auto;
+        left: auto;
+        bottom: auto;
+        margin: auto;
+        position: static;
+        bottom: 2.5em;
+        margin: 2.5em auto;
+        width: 90%;
+
+    }
+
+}
+
+

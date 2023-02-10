@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+
+    <link rel="stylesheet" href="src/reset.css">
+    <link rel="stylesheet" href="src/style.css">
+
+    <!-- Fuentes de texto personalizadas-->
+        <!-- inter regular 400 -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <nav>
+        <img src="src/img/Logo.png" alt="Logo de alura" id="logo">
+    </nav>
+    <main class="contenido">
+        <div class="area_input">
+            <textarea name="area_de_texto" class="area_de_texto" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+            <div class="infoYbotones">
+                <div class="info">
+                    <img src="src/img/iconoInfo.png" alt="Icono de informacion">
+                    <p>Solo letras minúsculas y sin acentos</p>
+                </div>
+                <div class="botones">
+                    <button id="boton_encriptar"> Encriptar</button>
+                    <button id="boton_desencriptar"> Desencriptar</button>
+    
+                </div>
+            </div>
+        </div>
+        <div class="area_output_vacia">
+            <img src="src/img/Muñeco.png" alt="muñeco investigando">
+            <p>Ningún mensaje fue encontrado</p>
+            <p>Ingresa el texto que desees encriptar o desencriptar</p>
+        </div>
+        <div class="area_output_llena"> 
+            <p id="outputSalida">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non leo ac nulla ultricies tincidunt. Cras ornare pellentesque convallis. Cras fringilla varius lorem, a ullamcorper nisi porta eget. Quisque aliquam placerat quam ac malesuada. Aliquam porta mattis finibus. Maecenas eu augue ut odio tristique fringilla nec sed orci. Nullam eget nisl in enim aliquam fringilla. Integer convallis est vel arcu eleifend facilisis. In orci mi, pharetra nec rhoncus eget, suscipit sed risus. Curabitur enim nisl, faucibus non lacus ut, suscipit interdum ante.
+                Ut commodo diam in magna pulvinar, nec lobortis ipsum ultrices. Phasellus at congue dolor. Etiam ac lacinia augue, in laoreet augue. Donec ac euismod arcu. In pulvinar nunc at ullamcorper ultrices. Morbi feugiat, quam at sollicitudin iaculis, nunc nulla auctor velit, ac suscipit nulla augue vel eros. Donec lectus turpis, pellentesque non massa ut, consequat luctus ligula. Duis eu elit blandit, dictum turpis nec, viverra neque. In non nisl in odio porta cursus nec a lacus. Pellentesque a tortor sagittis, sollicitudin ante sed, tincidunt lorem. Donec congue dolor ac rutrum dapibus. Praesent felis quam, varius non facilisis ac, pretium condimentum nibh.
+                Mauris ac vehicula libero. Praesent sed diam a mauris suscipit molestie. Quisque est tortor, accumsan sit amet eleifend quis, dictum gravida leo. Nunc sit amet cursus est, sit amet pretium sem. Etiam eu purus fringilla, placerat leo vitae, placerat erat. Morbi massa nunc, ullamcorper sed luctus in, maximus at neque. Etiam a massa quam.
+                Morbi non erat elementum, lacinia ligula vel, dictum arcu. Vestibulum elementum, metus in auctor semper, augue sem molestie ligula, quis feugiat tortor libero et felis. Etiam risus nunc, vehicula quis aliquet id, aliquam id purus. Mauris ut risus eget augue finibus cursus. Aliquam maximus enim magna. Aliquam lacus nunc, facilisis nec congue et, fringilla in augue. Nulla ac leo sodales ex sodales efficitur sit amet accumsan mi. Curabitur porttitor vestibulum suscipit. Vestibulum sagittis et turpis eget elementum. Sed justo metus, volutpat ac consectetur non, ornare nec massa. Duis viverra lacinia eros eu dapibus. Quisque at dictum libero, non elementum lacus. In sed porta ipsum. Proin consequat urna quis libero vulputate eleifend. Morbi vel ligula scelerisque, scelerisque magna quis, laoreet erat.
+                Proin sit amet posuere libero, sit amet lacinia lectus. Ut sollicitudin facilisis mauris, vel pretium lorem malesuada ac. Vestibulum quis facilisis nisi. Donec a est felis. Etiam ut facilisis nisl, at faucibus tortor. Maecenas lacinia ex a lorem condimentum, a viverra erat porta. Donec at elementum purus. Curabitur felis sapien, sollicitudin id nunc a, interdum vulputate dolor.
+            </p>
+            <button id="copiar"> Copiar!</button>
+        </div>
+
+    </main>
+</body>
+
+<script src="src/funcionalidad.js"></script>
+</html>
